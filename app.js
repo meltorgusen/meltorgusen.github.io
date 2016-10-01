@@ -1,0 +1,68 @@
+const CLASSES = `
+<iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=NjFhNzVwZ3JoOWlxYm9vMnRiNGY0bDY4cXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" width="400" height="400"><a href="https://calendar.google.com/calendar/embed?src=NjFhNzVwZ3JoOWlxYm9vMnRiNGY0bDY4cXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Click here to see my full teaching calendar</a></iframe>
+`;
+
+const OFFMAT = `
+<p>
+I usually get Googled for two reasons: Yoga or PaySimple, where I am the Director of Empowerment. A big part of my job at PaySimple is managing our hiring, so if you're doing some due diligence before an interview, great! Let me point you in the right direction:
+</p>
+<ul>
+  <li><a href="http://paysimple.com/career_opportunities.html"> PaySimple Careers Page </a></li>
+  <li><a href="https://www.youtube.com/channel/UC4J3iFVRUiFDmt9ulkfUvyw/videos"> PaySimple Jobs YouTube channel </a></li>
+  <li>My <a href="https://www.linkedin.com/in/meltorgusen"> LinkedIn Profile </a></li>
+  <li>Two short talks I gave on company <a href="https://www.youtube.com/watch?v=t8DsgNnjzMY"> culture </a> and <a href="https://vimeo.com/107314331">perks</a></li>
+  <li>PaySimple\'s <a href="http://www.glassdoor.com/Overview/Working-at-PaySimple-EI_IE694120.11,20.htm">Glassdoor Reviews </a></li>
+</ul>
+`;
+
+const ABOUT = `
+<p>
+Mel originally came to yoga as a complement to triathlon training and believes in moving meditation anywhere you can find it: in your running shoes, on the yoga mat, or at the barre.
+</p>
+<p>
+Mel is a lively, dynamic teacher who tailors classes to the bodies in the room. Her goal is to keep you in safe alignment, make you laugh, and give you something to think about. Her higher education started at the University of Alabama and finished at UC Berkeley (that’s a long story), and as a teacher she has completed a 200 hour vinyasa training and a 60 hour barre training. Her goal is to create classes that resonate whether your primary goal is a deeper connection to extraordinary consciousness or more open hamstrings. Your call.
+</p>
+<p>
+After growing up on the move in a military family, Mel  happily put down roots in Colorado in 2008. Outside of teaching, she works for a Denver software start up, never misses City Park Jazz, and lives with a dog, a man, and a cat.
+</p>
+`;
+
+var app = angular.module('yogasite', ['ui.router'])
+.config(function($stateProvider) {
+  var homeState = {
+    name: 'home',
+    url: '/home',
+    template: `<h3>Welcome to my yoga site!</h3>`
+  }
+
+  var aboutState = {
+    name: 'about',
+    url: '/about',
+    template: ABOUT
+  }
+
+  var classesState = {
+    name: 'classes',
+    url: '/classes',
+    template: CLASSES
+  }
+
+  var offTheMatState = {
+    name: 'off-the-mat',
+    url: '/off-the-mat',
+    template: OFFMAT
+  }
+
+  var contactState = {
+    name: 'contact',
+    url: '/contact',
+    template: `<h3>contact!</h3>`
+  }
+
+  $stateProvider.state(homeState);
+  $stateProvider.state(aboutState);
+  $stateProvider.state(classesState);
+  $stateProvider.state(offTheMatState);
+  $stateProvider.state(contactState);
+});
+

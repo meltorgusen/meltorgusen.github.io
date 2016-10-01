@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mel Torgusen</title>
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-app="yogasite">
+  <nav class="MainNav">
+    <ul>
+      <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
+      <li><a ui-sref="about" ui-sref-active="active">About</a></li>
+      <li><a ui-sref="classes" ui-sref-active="active">Classes</a></li>
+      <li><a ui-sref="off-the-mat" ui-sref-active="active">Off the mat</a></li>
+      <li><a ui-sref="contact" ui-sref-active="active">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <figure> 
+    <img src="http://placebear.com/100/100">
+  </figure>
+
+  <header>
+     <h1>Mel Torgusen <small>Denver based yoga and barre teacher specializing in fun vinyasa flow</small></h1>
+  </header>
+
+  <ui-view></ui-view>
+
+  <footer>
+    <div class="copyright">
+      © Mel Torgusen
+    </div>
+    <nav>
+      <ul>
+        <li><a href="">303-956-6963</a></li>
+        <li><a href="">meltorgusen@gmail.com</a></li>
+        <li><a href="">facebook</a></li>
+        <li><a href="">twitter</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
