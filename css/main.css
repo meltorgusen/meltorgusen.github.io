@@ -1,7 +1,24 @@
 html, body * {
   font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4rem;
+  position: relative;
+  color: #333;
 }
 
+body {
+  background-image: url('/img/seigaiha.png');
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
 
 .MainNav {
   background-color: rgba(5, 5, 5, 0.8);
@@ -19,18 +36,76 @@ html, body * {
   display: inline;
 }
 
-header small{
-  display: block;
-}
-header h1 {
-  font-size: 1.5rem;
+.content {
+  padding: 0.5em;
 }
 
-.active {
-  color: red;
+figure .picture {
+  height: 200px;
+  background-image: url('/img/001.jpg');
+  background-size: contain;
+}
+
+header {
+  margin-bottom: 0.5rem;
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+header small{
+  display: block;
+  font-style: italic;
   font-weight: bolder;
+}
+
+.Footer {
+  margin-top: auto;
+  background-color: rgba(5, 5, 5, 0.8);
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-flow: column;
+}
+.copyright {
+  font-size: smaller;
+  align-self: center;
+}
+.Footer-Nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.Footer-Nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.showList {
+  list-style-type: disc;
+  margin-left: 2rem;
+  line-height: 2rem;
 }
 
 .calendar {
   width: 100%;
+  margin-top: 2rem;
+}
+
+.active {
+  font-weight: bolder;
+  text-decoration: underline red;
+  text-transform: uppercase;
+}
+
+.inset {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #555;
+  float: left;
+  margin: 10px;
+  shape-outside: circle(50%);
 }

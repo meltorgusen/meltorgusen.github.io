@@ -1,4 +1,24 @@
 const CLASSES = `
+<h3> Find me teaching here: </h3>
+<ul class="showList">
+  <li>
+    <a href="">Yoga Pod Lodo </a>
+    <address> 1956 Lawrence Street, Suite 100<br>Denver, CO 80202 </address>
+  </li>
+  <li>
+    <a href="">The Yoga Mat </a>
+    <address> 3563 Larimer Street<br>Denver, CO 80205 </address>
+  </li>
+  <li>
+    <a href="">Patagonia </a>
+    <address> 1431 15th Street<br>Denver, CO 80202 </address>
+    <aside> Patagonia offers a free community class in the store every Wednesday night at 7:30 pm </aside>
+  </li>
+  <li>
+    <a href="">Colorado Athletic Club - Union Station</a>
+    <address> 1601 Wewatta Street<br>Denver, CO 80202 </address>
+  </li>
+</ul>
 <iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=NjFhNzVwZ3JoOWlxYm9vMnRiNGY0bDY4cXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" width="400" height="400"><a href="https://calendar.google.com/calendar/embed?src=NjFhNzVwZ3JoOWlxYm9vMnRiNGY0bDY4cXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Click here to see my full teaching calendar</a></iframe>
 `;
 
@@ -6,7 +26,7 @@ const OFFMAT = `
 <p>
 I usually get Googled for two reasons: Yoga or PaySimple, where I am the Director of Empowerment. A big part of my job at PaySimple is managing our hiring, so if you're doing some due diligence before an interview, great! Let me point you in the right direction:
 </p>
-<ul>
+<ul class="showList">
   <li><a href="http://paysimple.com/career_opportunities.html"> PaySimple Careers Page </a></li>
   <li><a href="https://www.youtube.com/channel/UC4J3iFVRUiFDmt9ulkfUvyw/videos"> PaySimple Jobs YouTube channel </a></li>
   <li>My <a href="https://www.linkedin.com/in/meltorgusen"> LinkedIn Profile </a></li>
@@ -16,6 +36,7 @@ I usually get Googled for two reasons: Yoga or PaySimple, where I am the Directo
 `;
 
 const ABOUT = `
+<img class="inset" src="/img/insert.jpg" alt="">
 <p>
 Mel originally came to yoga as a complement to triathlon training and believes in moving meditation anywhere you can find it: in your running shoes, on the yoga mat, or at the barre.
 </p>
