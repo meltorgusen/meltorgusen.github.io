@@ -12,7 +12,7 @@ const CONTACT = `
 </form>
 `;
 
-const CLASSES = `
+const LOCATIONS = `
 <h3> Find me teaching here: </h3>
 <ul class="showList">
   <li>
@@ -33,8 +33,19 @@ const CLASSES = `
     <address> 1601 Wewatta Street<br>Denver, CO 80202 </address>
   </li>
 </ul>
+`;
+
+const CALENDAR = `
 <h3>Calendar</h3>
 <iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=NjFhNzVwZ3JoOWlxYm9vMnRiNGY0bDY4cXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"><a href="https://calendar.google.com/calendar/embed?src=NjFhNzVwZ3JoOWlxYm9vMnRiNGY0bDY4cXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Click here to see my full teaching calendar</a></iframe>
+`;
+
+const CLASSES = `
+<ul class="ClassTab">
+  <li class="tab"><a class="link" ui-sref="classes.locations" ui-sref-active="active">Show Locations</a></li>
+  <li class="tab"><a class="link" ui-sref="classes.calendar" ui-sref-active="active">Show Calender</a></li>
+</ul>
+<ui-view></ui-view>
 `;
 
 const OFFMAT = `
@@ -83,6 +94,20 @@ var app = angular.module('yogasite', ['ui.router'])
     template: CLASSES
   }
 
+  var locationsState = {
+    name: 'classes.locations',
+    parent: 'classes',
+    url: '/locations',
+    template: LOCATIONS
+  }
+
+  var calendarState = {
+    name: 'classes.calendar',
+    parent: 'classes',
+    url: '/calendar',
+    template: CALENDAR
+  }
+
   var offTheMatState = {
     name: 'off-the-mat',
     url: '/off-the-mat',
@@ -98,6 +123,8 @@ var app = angular.module('yogasite', ['ui.router'])
   $stateProvider.state(homeState);
   $stateProvider.state(aboutState);
   $stateProvider.state(classesState);
+  $stateProvider.state(locationsState);
+  $stateProvider.state(calendarState);
   $stateProvider.state(offTheMatState);
   $stateProvider.state(contactState);
 });
