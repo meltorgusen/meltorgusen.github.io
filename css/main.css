@@ -66,6 +66,7 @@ header small{
   flex-flow: column;
 }
 .copyright {
+  margin-top: 1rem;
   font-size: smaller;
   align-self: center;
   color: white;
@@ -99,6 +100,17 @@ h3 {
 }
 .active {
   font-weight: bolder;
+  text-decoration: underline;
+  position: relative;
+}
+.active::after {
+  content: '';
+  position: absolute;
+  background-color: black;
+  right: 0;
+  left: 0;
+  height: 1px;
+  bottom: -1px;
 }
 
 .inset {
@@ -128,4 +140,14 @@ form button {
   color: #2A735B;
   border-radius: 5px;
   background-color: white;
+}
+
+.ClassTab {
+  margin: 0.5rem;
+}
+.ClassTab .tab {
+ display: inline;
+}
+.ClassTab .tab a {
+  text-decoration: none;
 }
