@@ -1,3 +1,17 @@
+const CONTACT = `
+<form method="POST" action="http://formspree.io/meltorgusen@gmail.com">
+  <label for="name">Name:</label>
+  <input type="text" name="name" required placeholder="Your name">
+  <label for="_replyto">Email:</label>
+  <input type="email" name="_replyto" required placeholder="Your email">
+  <input type="hidden" name="_subject" value="email from meltorgusen.com!">
+  <input type="text" name="_gotcha" style="display: none">
+  <label for="message">Your message:</label>
+  <textarea name="message" placeholder="Your message"></textarea>
+  <button type="submit">Send</button>
+</form>
+`;
+
 const CLASSES = `
 <h3> Find me teaching here: </h3>
 <ul class="showList">
@@ -78,7 +92,7 @@ var app = angular.module('yogasite', ['ui.router'])
   var contactState = {
     name: 'contact',
     url: '/contact',
-    template: `<h3>contact!</h3>`
+    template: CONTACT
   }
 
   $stateProvider.state(homeState);
