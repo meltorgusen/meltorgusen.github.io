@@ -8,7 +8,6 @@ html, body * {
 
 body {
   background-image: url('/img/seigaiha.png');
-  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-flow: column;
@@ -16,8 +15,8 @@ body {
 }
 
 p {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin: 0 0.5rem;
+  padding: 0.5rem 0;
 }
 
 .MainNav {
@@ -36,18 +35,15 @@ p {
   display: inline;
 }
 
-.content {
-  padding: 0.5em;
-}
-
 figure .picture {
   height: 200px;
   background-image: url('/img/001.jpg');
-  background-size: contain;
+  background-size: 100%;
+  background-position: bottom;
 }
 
 header {
-  margin-bottom: 0.5rem;
+  padding: 0.5rem;
 }
 header h1 {
   font-size: 2rem;
@@ -72,6 +68,7 @@ header small{
 .copyright {
   font-size: smaller;
   align-self: center;
+  color: white;
 }
 .Footer-Nav ul {
   display: flex;
@@ -84,6 +81,7 @@ header small{
 }
 
 .showList {
+  padding: 0.5rem;
   list-style-type: disc;
   margin-left: 2rem;
   line-height: 2rem;
@@ -91,21 +89,25 @@ header small{
 
 .calendar {
   width: 100%;
-  margin-top: 2rem;
+  min-height: 450px;
 }
 
+h3 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background: white;
+  padding: 0.5rem 0;
+}
 .active {
   font-weight: bolder;
-  text-decoration: underline red;
-  text-transform: uppercase;
 }
 
 .inset {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 1px solid #555;
-  float: left;
+  border: 1px solid #ddd;
+  float: right;
   margin: 10px;
   shape-outside: circle(50%);
 }
