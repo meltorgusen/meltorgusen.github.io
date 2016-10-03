@@ -13,39 +13,43 @@ const CONTACT = `
 `;
 
 const LOCATIONS = `
-<h3> Find me teaching here: </h3>
-<ul class="showList">
-  <li>
-    <a href="">Yoga Pod Lodo </a>
-    <address> 1956 Lawrence Street, Suite 100<br>Denver, CO 80202 </address>
-  </li>
-  <li>
-    <a href="">The Yoga Mat </a>
-    <address> 3563 Larimer Street<br>Denver, CO 80205 </address>
-  </li>
-  <li>
-    <a href="">Patagonia </a>
-    <address> 1431 15th Street<br>Denver, CO 80202 </address>
-    <aside> Patagonia offers a free community class in the store every Wednesday night at 7:30 pm </aside>
-  </li>
-  <li>
-    <a href="">Colorado Athletic Club - Union Station</a>
-    <address> 1601 Wewatta Street<br>Denver, CO 80202 </address>
-  </li>
-</ul>
+<div class="classes">
+  <h3> Find me teaching here: </h3>
+  <img class="inset" src="/img/insert.jpg" alt="">
+  <ul class="showList">
+    <li>
+      <a href="https://lodo.yogapod.com/schedule/">Yoga Pod Lodo </a>
+      <address> 1956 Lawrence Street, Suite 100<br>Denver, CO 80202 </address>
+    </li>
+    <li>
+      <a href="http://www.ontheyogamat.com/#focus">The Yoga Mat </a>
+      <address> 3563 Larimer Street<br>Denver, CO 80205 </address>
+    </li>
+    <li>
+      <a href="http://www.patagonia.com/patagonia-denver-1431-15th-street-blake-street-denver-colorado-80202/store_924604854.html">Patagonia </a>
+      <address> 1431 15th Street<br>Denver, CO 80202 </address>
+      <aside> Patagonia offers a free community class in the store every Wednesday night at 7:30 pm </aside>
+    </li>
+    <li>
+      <a href="https://www.wellbridge.com/colorado-athletic-club/union-station/fitness-wellness/class-schedule">Colorado Athletic Club - Union Station</a>
+      <address> 1601 Wewatta Street<br>Denver, CO 80202 </address>
+    </li>
+  </ul>
+</div>
 `;
 
 const CALENDAR = `
-<h3>Calendar</h3>
-<iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=NjFhNzVwZ3JoOWlxYm9vMnRiNGY0bDY4cXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"><a href="https://calendar.google.com/calendar/embed?src=NjFhNzVwZ3JoOWlxYm9vMnRiNGY0bDY4cXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Click here to see my full teaching calendar</a></iframe>
+<div class="classes">
+  <iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=NjFhNzVwZ3JoOWlxYm9vMnRiNGY0bDY4cXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"><a href="https://calendar.google.com/calendar/embed?src=NjFhNzVwZ3JoOWlxYm9vMnRiNGY0bDY4cXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Click here to see my full teaching calendar</a></iframe>
+</div>
 `;
 
 const CLASSES = `
 <ul class="ClassTab">
-  <li class="tab"><a class="link" ui-sref="classes.locations" ui-sref-active="active">Show Locations</a></li>
-  <li class="tab"><a class="link" ui-sref="classes.calendar" ui-sref-active="active">Show Calender</a></li>
+  <li class="tab"><a class="link" ui-sref="classes.locations" ui-sref-active="active">Locations</a></li>
+  <li class="tab"><a class="link" ui-sref="classes.calendar" ui-sref-active="active">Calender</a></li>
 </ul>
-<ui-view></ui-view>
+<ui-view class="classes"></ui-view>
 `;
 
 const OFFMAT = `
@@ -62,10 +66,11 @@ I usually get Googled for two reasons: Yoga or PaySimple, where I am the Directo
 `;
 
 const ABOUT = `
+<h3>Welcome!</h3>
 <p>
 Mel originally came to yoga as a complement to triathlon training and believes in moving meditation anywhere you can find it: in your running shoes, on the yoga mat, or at the barre.
 </p>
-<img class="inset" src="/img/insert.jpg" alt="">
+<img class="inset" src="/img/insert.jpg" alt="" style="float: left;">
 <p>
 Mel is a lively, dynamic teacher who tailors classes to the bodies in the room. Her goal is to keep you in safe alignment, make you laugh, and give you something to think about. Her higher education started at the University of Alabama and finished at UC Berkeley (that’s a long story), and as a teacher she has completed a 200 hour vinyasa training and a 60 hour barre training. Her goal is to create classes that resonate whether your primary goal is a deeper connection to extraordinary consciousness or more open hamstrings. Your call.
 </p>
@@ -75,11 +80,11 @@ After growing up on the move in a military family, Mel  happily put down roots i
 `;
 
 var app = angular.module('yogasite', ['ui.router'])
-.config(function($stateProvider) {
+.config(function($stateProvider, $urlRouterProvider) {
   var homeState = {
     name: 'home',
-    url: '/home',
-    template: `<h3>Welcome to my yoga site!</h3>`
+    url: '',
+    template: ABOUT
   }
 
   var aboutState = {
@@ -127,5 +132,6 @@ var app = angular.module('yogasite', ['ui.router'])
   $stateProvider.state(calendarState);
   $stateProvider.state(offTheMatState);
   $stateProvider.state(contactState);
+
 });
 
