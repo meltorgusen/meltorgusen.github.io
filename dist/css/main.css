@@ -3,7 +3,7 @@ html, body * {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4rem;
   position: relative;
-  color: #333;
+  color: #171f23;
 }
 
 body {
@@ -27,7 +27,7 @@ p {
   justify-content: space-around;
 }
 .MainNav a {
-  color: rgba(250, 250, 250, 1);
+  color: #f1f5f7;
   text-decoration: none;
   padding: 0.5rem;
 }
@@ -58,8 +58,8 @@ header small{
 
 .Footer {
   margin-top: auto;
-  background-color: gray;
-  color: white;
+  background-color: #2f3e47;
+  color: #f1f5f7;
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
@@ -69,7 +69,7 @@ header small{
   margin-top: 1rem;
   font-size: smaller;
   align-self: center;
-  color: white;
+  color: #f1f5f7;
 }
 .Footer-Nav ul {
   display: flex;
@@ -77,7 +77,7 @@ header small{
   justify-content: space-around;
 }
 .Footer-Nav a {
-  color: white;
+  color: #f1f5f7;
   text-decoration: none;
 }
 
@@ -125,10 +125,10 @@ form textarea {
 }
 form button {
   padding: 0.5rem 1rem;
-  border-color: #2A735B;
-  color: #2A735B;
+  border-color: #779CB2;
+  color: #475d6a;
   border-radius: 5px;
-  background-color: white;
+  background-color: #f1f5f7;
 }
 
 .ClassTab {
@@ -141,11 +141,11 @@ form button {
   text-decoration: none;
   background-color: #F0F0F0;
   padding: 1rem;
-  border: solid 1px #D2D2D2;
+  border: solid 1px #D6E1E7;
 }
 .ClassTab .tab a.active {
   font-weight: bolder;
-  background-color: white;
+  background-color: #f1f5f7;
   border-bottom: none;
   position: relative;
 }
@@ -156,12 +156,12 @@ form button {
   right: 0;
   bottom: -2px;
   height: 3px;
-  background-color: white;
+  background-color: #f1f5f7;
   z-index: 1;
 }
 
 .classes {
-  background-color: white;
-  border-top: solid 1px #D2D2D2;
+  background-color: #f1f5f7;
+  border-top: solid 1px #D6E1E7;
   top: -1px;
 }
