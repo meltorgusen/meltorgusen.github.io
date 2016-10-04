@@ -3,7 +3,17 @@ var app = angular.module('yogasite', ['ui.router'])
   var homeState = {
     name: 'home',
     url: '',
-    templateUrl: 'about.html'
+    templateUrl: 'about.html',
+    resolve: {
+      header: function() {
+        return '/img/001.jpg';
+      },
+      title: function() {
+        return 'Mel Torgusen';
+      }
+    },
+    controller: 'SiteCtrl',
+    controllerAs: 'mt'
   }
 
   var aboutState = {
@@ -53,7 +63,10 @@ var app = angular.module('yogasite', ['ui.router'])
   $stateProvider.state(contactState);
 
 })
-.controller('SiteCtrl', ['$scope', function($scope){
-  $scope.title = 'Mel Torgusen';
+.controller('SiteCtrl', ['$scope', 'title', function($scope, title){
+
+  // NOTE this is only passed to the state?
+  console.log(title);
+  this.title = title;
 }]);
 
