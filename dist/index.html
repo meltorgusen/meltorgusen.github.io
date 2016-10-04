@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
-<body ng-app="yogasite">
+<body ng-app="yogasite" ng-controller="SiteCtrl">
   <nav class="MainNav">
     <ul>
       <li><a ui-sref="about" ui-sref-active="active">Home</a></li>
@@ -27,7 +27,7 @@
 
   <div class="content">
     <header>
-       <h1>Mel Torgusen <small>Denver based yoga and barre teacher specializing in fun vinyasa flow</small></h1>
+      <h1>{{ title }} <small>Denver based yoga and barre teacher specializing in fun vinyasa flow</small></h1>
     </header>
 
     <ui-view></ui-view>
