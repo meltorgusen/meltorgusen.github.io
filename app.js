@@ -15,7 +15,7 @@ const CONTACT = `
 const LOCATIONS = `
 <div class="classes">
   <h3> Find me teaching here: </h3>
-  <img class="inset" src="/img/insert.jpg" alt="">
+  <div class="inset" style="background-image: url('img/002.jpg')" alt=""></div>
   <ul class="showList">
     <li>
       <a href="https://lodo.yogapod.com/schedule/">Yoga Pod Lodo </a>
@@ -70,7 +70,7 @@ const ABOUT = `
 <p>
 Mel originally came to yoga as a complement to triathlon training and believes in moving meditation anywhere you can find it: in your running shoes, on the yoga mat, or at the barre.
 </p>
-<img class="inset" src="/img/insert.jpg" alt="" style="float: left;">
+<div class="inset" style="background-image: url('img/003.jpg'); float: left; background-position: center;" alt=""></div>
 <p>
 Mel is a lively, dynamic teacher who tailors classes to the bodies in the room. Her goal is to keep you in safe alignment, make you laugh, and give you something to think about. Her higher education started at the University of Alabama and finished at UC Berkeley (that’s a long story), and as a teacher she has completed a 200 hour vinyasa training and a 60 hour barre training. Her goal is to create classes that resonate whether your primary goal is a deeper connection to extraordinary consciousness or more open hamstrings. Your call.
 </p>
