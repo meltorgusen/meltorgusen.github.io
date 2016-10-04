@@ -52,5 +52,8 @@ var app = angular.module('yogasite', ['ui.router'])
   $stateProvider.state(offTheMatState);
   $stateProvider.state(contactState);
 
-});
+})
+.controller('SiteCtrl', ['$scope', function($scope){
+  $scope.title = 'Mel Torgusen';
+}]);
 
