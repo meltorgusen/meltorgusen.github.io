@@ -1,11 +1,20 @@
-<form method="POST" action="http://formspree.io/meltorgusen@gmail.com">
-  <label for="name">Name:</label>
-  <input type="text" name="name" required placeholder="Your name">
-  <label for="_replyto">Email:</label>
-  <input type="email" name="_replyto" required placeholder="Your email">
-  <input type="hidden" name="_subject" value="email from meltorgusen.com!">
-  <input type="text" name="_gotcha" style="display: none">
-  <label for="message">Your message:</label>
-  <textarea name="message" placeholder="Your message"></textarea>
-  <button type="submit">Send</button>
-</form>
+<figure>
+  <div class="picture" ng-class=yoga.headerImg></div>
+</figure>
+
+<div class="content">
+  <header>
+    <h1>{{ yoga.title }} <small>Denver based yoga and barre teacher specializing in fun vinyasa flow</small></h1>
+  </header>
+  <form method="POST" action="http://formspree.io/meltorgusen@gmail.com">
+    <label for="name">Name:</label>
+    <input type="text" name="name" required placeholder="Your name">
+    <label for="_replyto">Email:</label>
+    <input type="email" name="_replyto" required placeholder="Your email">
+    <input type="hidden" name="_subject" value="email from meltorgusen.com!">
+    <input type="text" name="_gotcha" style="display: none">
+    <label for="message">Your message:</label>
+    <textarea name="message" placeholder="Your message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</div>
