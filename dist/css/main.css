@@ -110,6 +110,8 @@ h3 {
   float: right;
   margin: 10px;
   shape-outside: circle(50%);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 form {
