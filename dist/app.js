@@ -3,7 +3,7 @@ var app = angular.module('yogasite', ['ui.router'])
   var homeState = {
     name: 'home',
     url: '',
-    templateUrl: 'about.html',
+    templateUrl: '/partials/about.html',
     resolve: {
       header: function() {
         return '/img/001.jpg';
@@ -19,39 +19,39 @@ var app = angular.module('yogasite', ['ui.router'])
   var aboutState = {
     name: 'about',
     url: '/about',
-    templateUrl: 'about.html'
+    templateUrl: '/partials/about.html'
   }
 
   var classesState = {
     name: 'classes',
     url: '/classes',
-    templateUrl: 'classes.html'
+    templateUrl: '/partials/classes.html'
   }
 
   var locationsState = {
     name: 'classes.locations',
     parent: 'classes',
     url: '/locations',
-    templateUrl: 'locations.html'
+    templateUrl: '/partials/locations.html'
   }
 
   var calendarState = {
     name: 'classes.calendar',
     parent: 'classes',
     url: '/calendar',
-    templateUrl: 'calendar.html'
+    templateUrl: '/partials/calendar.html'
   }
 
   var offTheMatState = {
     name: 'off-the-mat',
     url: '/off-the-mat',
-    templateUrl: 'offmat.html'
+    templateUrl: '/partials/offmat.html'
   }
 
   var contactState = {
     name: 'contact',
     url: '/contact',
-    templateUrl: 'contact.html'
+    templateUrl: '/partials/contact.html'
   }
 
   $stateProvider.state(homeState);
@@ -61,10 +61,8 @@ var app = angular.module('yogasite', ['ui.router'])
   $stateProvider.state(calendarState);
   $stateProvider.state(offTheMatState);
   $stateProvider.state(contactState);
-
 })
 .controller('SiteCtrl', ['$scope', 'title', function($scope, title){
-
   // NOTE this is only passed to the state?
   console.log(title);
   this.title = title;
