@@ -1,9 +1,9 @@
 /* color ref: http://www.color-hex.com/color/779cb2 */
 
 html, body * {
-  font-size: 14px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.4rem;
+  line-height: 1.5rem;
   position: relative;
   color: #171f23;
 }
@@ -165,6 +165,7 @@ form button {
 
 .ClassTab {
   margin: 1rem;
+  margin-top: 2rem;
 }
 .ClassTab .tab {
  display: inline;
@@ -195,5 +196,5 @@ form button {
 .classes {
   background-color: #f1f5f7;
   border-top: solid 1px #D6E1E7;
-  top: -1px;
+  top: -2px;
 }
