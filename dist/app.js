@@ -103,7 +103,6 @@ var app = angular.module('yogasite', ['ui.router'])
 })
 .controller('SiteCtrl', ['$scope', 'headerImg', function($scope, headerImg){
   this.title = 'Mel Torgusen';
-  console.log(headerImg);
   this.headerImg = headerImg;
 }]);
 
