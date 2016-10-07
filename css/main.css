@@ -198,3 +198,33 @@ form button {
   border-top: solid 1px #D6E1E7;
   top: -2px;
 }
+
+/* tablet sized */
+@media only screen and (min-width: 768px) {
+  .content {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  figure .picture {
+    height: 400px;
+  }
+
+  figure .picture.classes {
+    background-position: center;
+  }
+
+  figure .picture.offmat {
+    background-position: center;
+  }
+
+  figure .picture.contact {
+    background-position: center;
+  }
+
+  div.classes {
+    border-right: solid 1px #D6E1E7;
+    border-left: solid 1px #D6E1E7;
+  }
+}
