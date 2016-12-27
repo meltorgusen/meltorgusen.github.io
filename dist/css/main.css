@@ -227,4 +227,12 @@ form button {
     border-right: solid 1px #D6E1E7;
     border-left: solid 1px #D6E1E7;
   }
+
+  .Footer ul {
+    justify-content: center;
+  }
+
+  .Footer li {
+    margin: 0 2em;
+  }
 }
