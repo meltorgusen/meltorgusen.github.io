@@ -111,6 +111,10 @@ header small{
   align-self: center;
   color: #f1f5f7;
 }
+.copyright a {
+  color: #f1f5f7;
+  font-size: 1em;
+}
 .Footer-Nav ul {
   display: flex;
   align-items: center;
