@@ -14,3 +14,12 @@ __do not ever pull or push master__.
 2. `npm run deploy` will push `dist` to master.
 
 3. push `dev` up to sync the development environment.
+
+## running locally
+
+It's a static site. `cd dist` and fire up your favorite static web server. Here
+are a couple suggestions:
+
+1. `python -m SimpleHTTPServer`
+
+2. `http-server` (after `npm -i http-server -g`)
