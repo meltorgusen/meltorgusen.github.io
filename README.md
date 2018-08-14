@@ -7,11 +7,11 @@ yoga teacher 🙏 and people person 👩‍💻
 
 __do not ever pull or push master__. 
 
-1. `dev` is the working development branch. Do all work in `dev`, merge all
-   changes locally back into `master`, switch back to `dev`, and then run `npm
+1. `dev` is the working development branch. Do all work in `dev` (or in a
+   feature branch, and merge it back into `dev`) and then run `npm
    run deploy`
 
-2. `npm run deploy` will push `dist` to master.
+2. `npm run deploy` will push a `dist` subtree to master.
 
 3. push `dev` up to sync the development environment.
 
